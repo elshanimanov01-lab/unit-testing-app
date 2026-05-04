@@ -32,6 +32,7 @@ describe('LoginForm komponenti', () => {
         });
         test('her iki sahe bos olduqda duyme disabled olur', () => {
             const button = screen.getByRole('button', { name: 'Daxil ol' });
+            expect(button).toBeDisabled();
         });
     });
 
@@ -86,7 +87,7 @@ describe('LoginForm komponenti', () => {
     });
     describe('input deyer yoxlamalari', () => {
 
-        test('yazilan metn inputda gorunur', async() => {
+        test('yazilan metn inputda gorunur', async () => {
             const emailInput = screen.getByLabelText('Email');
             await user.type(emailInput, 'test@mail.com');
 

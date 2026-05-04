@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { add, multiply, divide, factorial } from "./math";
-import { useFormState } from "react-dom";
 
 describe("Math Utils", () => {
   describe("add() funksiyasi", () => {

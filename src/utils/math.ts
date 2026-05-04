@@ -6,7 +6,7 @@ export function multiply(a: number, b: number): number {
 }
 export function divide (a:number,b:number):number{
     if (b===0) {
-        throw mew Error('Sifira bolmek olmaz');
+        throw new Error('Sifira bolmek olmaz');
     }
     return a/b
 }
