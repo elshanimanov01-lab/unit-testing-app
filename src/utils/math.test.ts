@@ -7,7 +7,7 @@ describe("Math Utils", () => {
     test("iki musbet ededi toplayir: 2+3=5", () => {
       const netice = add(2, 3);
 
-      expert(netice).toBe(5);
+      expect(netice).toBe(5);
     });
     test("menfi ededlerle isleyir:-1 + -2 = -3", () => {
       expect(add(-1, -2)).toBe(5);
